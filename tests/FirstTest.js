@@ -1,24 +1,25 @@
-
-define(['c:\\Users\\Ebalai\\WebstormProjects\\TestFrameworkTemplate\\pages\\PageFactory.js'],
+define(['../pages/PageFactory.js'],
 
     function (PageFactory) {
 
+        
 
+            console.log('tests');
 
-    var pageFactory = new PageFactory();
+            var pageFactory = new PageFactory();
 
-    console.log(pageFactory.printItemsFromLoginPage());
-
-
-
+            console.log(pageFactory.homePage.printItemsFromHomePage(), ' 123');
+            console.log(pageFactory.loginPage.printItemsFromLoginPage(), ' 456')
+        
 
 
     })
 
 
+/*
 
-/*import PageFactory from '../pages/PageFactory'
-import LoginPage from "../pages/LoginPage";
+import PageFactory from '../pages/PageFactory'
+
 
 
 
@@ -27,10 +28,9 @@ import LoginPage from "../pages/LoginPage";
 
     const pageFactory = new PageFactory();
 
-    var bb = printValuesFromPages() {
+
         console.log(this.pageFactory.printFromLoginPage());
-    }
 
-    bb();*/
 
+*/
 

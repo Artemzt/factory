@@ -1,17 +1,16 @@
-export default
-{
-    "abstractPage" :  {
-        "sixth" : "sixthLocator",
-        "fifth" : "seventhLocator"
+define({
+    abstractPage :  {
+        sixth : "sixthLocator",
+        fifth : "seventhLocator"
     },
-    "homePage" :  {
-        "first" : "firstLocator",
-        "second" : "secondLocator"
+    homePage :  {
+        first : 'firstLocator',
+        second : 'secondLocator'
     },
 
-    "loginPage" :  {
-        "fourth" : "fourthLocator",
-        "third" : "fifthLocator"
+    loginPage :  {
+        fourth : "fourthLocator",
+        third : "fifthLocator"
     }
 
-}
+})

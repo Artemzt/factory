@@ -1,20 +1,19 @@
-
-define(['/locators/locators.json', 'AbstractPage'],
+define(['../pages/locators/Locators.js', '../pages/AbstractPage.js'],
 
     function ($$, AbstractPage) {
 
-    function LoginPage() {
-        this.thirdOne = $$.loginPage.third;
-        this.fourthOne = $$.loginPage.fourth;
-    }
+        function LoginPage() {
+            this.thirdOne = $$.loginPage.third;
+            this.fourthOne = $$.loginPage.fourth;
+        }
 
-        var loginPage = Object.create(AbstractPage);
-        loginPage.prototype.constructor = LoginPage;
+        LoginPage.prototype = Object.create(AbstractPage)
+        LoginPage.prototype.constructor = LoginPage;
 
-    loginPage.prototype.printItemsFromLoginPage = function () {
-        return this.thirdOne;
-    }
-
+        LoginPage.prototype.printItemsFromLoginPage = function () {
+            return this.fourthOne;
+        }
+        return LoginPage;
     })
 
 
@@ -37,4 +36,5 @@ export default class LoginPage extends AbstractPage{
     printFromLoginPage() {
         return this.thirdOne + ' ' + this.fourthOne;
     }
-}*/
+}
+*/

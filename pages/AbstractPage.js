@@ -1,24 +1,20 @@
-
-define(['/locators/locators.json'],
+define(['../pages/locators/Locators.js'],
     function ($$) {
 
-    function AbstractPage() {
-        this.fifthOne = $$.abstractPage.fifth;
-        this.sixthOne = $$.abstractPage.sixth;
-    }
-    var abstractPage = new AbstractPage();
+        function AbstractPage() {
+            this.fifthOne = $$.abstractPage.fifth;
+            this.sixthOne = $$.abstractPage.sixth;
+        }
 
-    abstractPage.prototype.prinFromAbstractPage = function () {
-        return this.fifthOne;
-    }
+        AbstractPage.prototype.printFromAbstractPage = function () {
+            return this.fifthOne;
+        }
+
+        return AbstractPage;
 
     })
-
-
-
-
-
 /*
+
 import * as $$ from '/locators/Locators.js'
 
 class AbstractPage {
@@ -31,4 +27,5 @@ class AbstractPage {
     print() {
         return this.fifthOne + ' ' + this.sixthOne;
     }
-}*/
+}
+*/
